@@ -41,7 +41,7 @@ class Solution:
             return True
 
 
-# other solution
+# others solution
 # 使用位运算和二进制写法如0bxxxxx直接进行比对 不进行人工进制转换
 """
 def check(nums, start, size):
