@@ -27,7 +27,7 @@ class Solution:
         elif not head.next:
             return TreeNode(head.val)  # 注意rtype是TreeNode，要利用ListNode的val创建新实例
         # 此处为了寻找原链表的中间节点，使用两个步距不一样的指针
-        slow, fast = head, head.next.next  
+        slow, fast = head, head.next.next
         while fast and fast.next:
             slow = slow.next
             fast = fast.next.next

@@ -11,7 +11,7 @@ class Solution:
         for i in range(1, len(s)+1):
             if s[:i] == s[i-1::-1]:
                 for tmp in self.partition(s[i:]):
-                    ret.append(s[:i].split() + tmp)  # str转list可以直接用[str]
+                    ret.append(s[:i].split() + tmp)  # str->list可以直接用[str]
         if ret:
             return ret
         return [[]]
